@@ -4,7 +4,7 @@ public class Runner {
 
 	public static void main(String[] args) {
 		ArmstrongNumbers example = new ArmstrongNumbers();
-		System.out.println(example.armstrong(1000));
+		System.out.println(example.armstrong(1000000));
 
 	}
 
