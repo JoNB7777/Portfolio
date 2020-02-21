@@ -11,5 +11,30 @@ public class FibonacciNumbers {
 		}
 		return fibonacciArray[position];
 	}
+	
+	
+	public int fibonacciRecursiveCalculation(int position) {
+		if (position == 0) {
+			return 0;
+		} else if (position == 1) {
+			return 1;
+		}
+		return fibonacciRecursiveCalculation(position - 1) + fibonacciRecursiveCalculation(position - 2);
+	}
+	
+	
+	public int fibonacciSequenceAlternative(int position) {
+		if (position == 0) {
+			return 0;
+		}
+		int firstPosition = 0;
+		int nextPosition =1;
+		for (int i = 1; i < position; i++) {
+			int temp = firstPosition;
+			firstPosition = nextPosition;
+			nextPosition = firstPosition + temp;
+		}
+		return nextPosition;
+	}
 
 }
