@@ -29,7 +29,7 @@ public class FibonacciNumbers {
 		}
 		int firstPosition = 0;
 		int nextPosition =1;
-		for (int i = 1; i < position - 1; i++) {
+		for (int i = 1; i < position; i++) {
 			int temp = firstPosition;
 			firstPosition = nextPosition;
 			nextPosition = firstPosition + temp;
